@@ -4,25 +4,47 @@
     --cor-terciaria: ;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    margin: 0;
-    padding: 50;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
-  
-.to-do {
-    background-color: #fff;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 500px;
-    padding: 50px;
+ 
+h1{
+    display: flex;
+    justify-content: center;
 }
 
-.header{
-    background-color:  red;
+ul{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+
+.Container {
+    margin-top: 40px;
+    width: 60%;
+}
+
+.new-task{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 90%;
+}
+
+.insert{
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
 }
