@@ -3,6 +3,11 @@
     --cor-secundaria: ;
     --cor-terciaria: ;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box ;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -15,14 +20,42 @@ body {
     height: 100vh;
 }
   
-.to-do {
+.container {
+    border: 2px #fff;
     background-color: #fff;
     border-radius: 10px;
-    width: 100%;
     max-width: 500px;
-    padding: 50px;
+    padding: 150px;
+    border-radius: 8px;
+    width: 300px;
+    
 }
 
-.header{
-    background-color:  red;
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.input-container{
+display: flex;
+margin-bottom: 20px;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    color: blueviolet;
+    background-color: darkmagenta;
+}
+button:hover{
+    background-color: orangered;
 }
